@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" defer src="render.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <section
+      class="section is-flex is-justify-content-center is-align-items-center min-vh-100"
+    >
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-10">
+            <div class="box">
+              <video
+                id="videoElement"
+                style="width: 100%; background: #000"
+              ></video>
+
+              <div class="buttons is-centered mt-4">
+                <button id="startButton" class="button is-primary">
+                  Start
+                </button>
+                <button id="stopButton" class="button is-danger">Stop</button>
+              </div>
+
+              <div class="buttons is-centered mt-2">
+                <button id="selectSourceButton" class="button is-info">
+                  Select Video Source
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
