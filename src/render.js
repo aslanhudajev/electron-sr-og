@@ -149,7 +149,9 @@ const geminiVideoQuery = async (filePath) => {
                 fileUri: recording.uri,
               },
             },
-            { text: "Describe this video clip" },
+            {
+              text: "You are an AI agent trainer. Your job is to create system prompts to be used for AI agents based on recordings of human interactions with website. You will base your prompt on what you see on the video and on the audio of the voice of the user that has recorded the video.",
+            },
           ],
         },
       ],
